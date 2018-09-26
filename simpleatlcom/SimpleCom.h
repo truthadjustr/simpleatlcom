@@ -64,6 +64,13 @@ public:
 
 
 
+	STDMETHOD(Calculate)(BOOL a_bFireEvent, LONG* a_lTotalMarks);
+	STDMETHOD(get_ComMarks)(LONG* pVal);
+	STDMETHOD(put_ComMarks)(LONG newVal);
+	STDMETHOD(get_AtlMarks)(LONG* pVal);
+	STDMETHOD(put_AtlMarks)(LONG newVal);
+	STDMETHOD(get_StudentName)(BSTR* pVal);
+	STDMETHOD(put_StudentName)(BSTR newVal);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(SimpleCom), CSimpleCom)
