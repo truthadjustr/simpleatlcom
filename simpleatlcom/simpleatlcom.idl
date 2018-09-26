@@ -37,6 +37,7 @@ library simpleatlcomLib
 	{
 		properties:
 		methods:
+			[id(1)] HRESULT TotalMarks(LONG a_lTotalMarks);
 	};
 	[
 		uuid(C78AB15D-E7A0-4719-B6A8-62810CF4EE7B)		
