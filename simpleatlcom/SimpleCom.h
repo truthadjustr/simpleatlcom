@@ -60,6 +60,9 @@ END_CONNECTION_POINT_MAP()
 	{
 	}
 
+private:
+    long m_lComMarks,m_lATLMarks,m_lTotalMarks;
+    CComBSTR m_bstStudName;
 public:
 
 
