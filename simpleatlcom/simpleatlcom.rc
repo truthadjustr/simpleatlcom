@@ -1,4 +1,4 @@
-//Microsoft Visual C++ generated resource script.
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
@@ -16,20 +16,25 @@
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
 
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-LANGUAGE 9, 1
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE
+1 TEXTINCLUDE 
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE
+2 TEXTINCLUDE 
 BEGIN
     "#ifndef APSTUDIO_INVOKED\r\n"
     "#include ""targetver.h""\r\n"
@@ -39,13 +44,14 @@ BEGIN
     "\0"
 END
 
-3 TEXTINCLUDE  
+3 TEXTINCLUDE 
 BEGIN
     "1 TYPELIB ""simpleatlcom.tlb""\r\n"
     "\0"
 END
 
 #endif    // APSTUDIO_INVOKED
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -55,15 +61,15 @@ END
 VS_VERSION_INFO VERSIONINFO
  FILEVERSION 1,0,0,1
  PRODUCTVERSION 1,0,0,1
- FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
- FILEFLAGS VS_FF_DEBUG
+ FILEFLAGS 0x1L
 #else
  FILEFLAGS 0x0L
 #endif
- FILEOS VOS_NT_WINDOWS32
- FILETYPE VFT_DLL
- FILESUBTYPE VFT2_UNKNOWN
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
@@ -77,14 +83,22 @@ BEGIN
             VALUE "OriginalFilename", "simpleatlcom.dll"
             VALUE "ProductName", "TODO: <Product name>"
             VALUE "ProductVersion", "1.0.0.1"
-            VALUE "OLESelfRegister", ""
         END
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x0409, 1200
+        VALUE "Translation", 0x409, 1200
     END
 END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_SIMPLEATLCOM        REGISTRY                "simpleatlcom.rgs"
+IDR_SIMPLECOM           REGISTRY                "SimpleCom.rgs"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -93,14 +107,13 @@ END
 
 STRINGTABLE
 BEGIN
-    IDS_PROJNAME                    "simpleatlcom"
+    IDS_PROJNAME            "simpleatlcom"
 END
 
-IDR_SIMPLEATLCOM REGISTRY "simpleatlcom.rgs"
-////////////////////////////////////////////////////////////////////////////
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
 
 
-#endif
 
 #ifndef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -108,6 +121,7 @@ IDR_SIMPLEATLCOM REGISTRY "simpleatlcom.rgs"
 // Generated from the TEXTINCLUDE 3 resource.
 //
 1 TYPELIB "simpleatlcom.tlb"
+
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 

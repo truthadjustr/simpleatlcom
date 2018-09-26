@@ -8,11 +8,37 @@ import "oaidl.idl";
 import "ocidl.idl";
 
 [
+	object,
+	uuid(6FA71A53-B32A-4F34-821C-33304CA1AB3F),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ISimpleCom : IDispatch{
+};
+[
 	uuid(2FA966D2-09A5-4E75-BCBB-BB2BD2594643),
 	version(1.0),
 ]
 library simpleatlcomLib
 {
 	importlib("stdole2.tlb");
+	[
+		uuid(9648FDFB-0E07-4F0B-A2F8-9B201D0D525A)		
+	]
+	dispinterface _ISimpleComEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(C78AB15D-E7A0-4719-B6A8-62810CF4EE7B)		
+	]
+	coclass SimpleCom
+	{
+		[default] interface ISimpleCom;
+		[default, source] dispinterface _ISimpleComEvents;
+	};
 };
 
+import "shobjidl.idl";
