@@ -1,0 +1,18 @@
+// simpleatlcom.idl : IDL source for simpleatlcom
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (simpleatlcom.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(2FA966D2-09A5-4E75-BCBB-BB2BD2594643),
+	version(1.0),
+]
+library simpleatlcomLib
+{
+	importlib("stdole2.tlb");
+};
+
