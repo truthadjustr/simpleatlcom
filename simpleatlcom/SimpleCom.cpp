@@ -22,7 +22,7 @@ STDMETHODIMP CSimpleCom::InterfaceSupportsErrorInfo(REFIID riid)
 }
 
 
-STDMETHODIMP CSimpleCom::Calculate(BOOL a_bFireEvent, LONG* a_lTotalMarks)
+STDMETHODIMP CSimpleCom::Calculate(VARIANT_BOOL a_bFireEvent, LONG* a_lTotalMarks)
 {
     *a_lTotalMarks = m_lATLMarks + m_lComMarks;
     if (a_bFireEvent == VARIANT_TRUE)

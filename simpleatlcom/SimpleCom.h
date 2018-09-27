@@ -67,7 +67,7 @@ public:
 
 
 
-	STDMETHOD(Calculate)(BOOL a_bFireEvent, LONG* a_lTotalMarks);
+	STDMETHOD(Calculate)(VARIANT_BOOL a_bFireEvent, LONG* a_lTotalMarks);
 	STDMETHOD(get_ComMarks)(LONG* pVal);
 	STDMETHOD(put_ComMarks)(LONG newVal);
 	STDMETHOD(get_AtlMarks)(LONG* pVal);

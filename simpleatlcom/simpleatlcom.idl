@@ -15,7 +15,7 @@ import "ocidl.idl";
 	pointer_default(unique)
 ]
 interface ISimpleCom : IDispatch{
-	[id(1)] HRESULT Calculate([in] BOOL a_bFireEvent, [out,retval] LONG* a_lTotalMarks);
+	[id(1)] HRESULT Calculate([in] VARIANT_BOOL a_bFireEvent, [out,retval] LONG* a_lTotalMarks);
 	[propget, id(2)] HRESULT ComMarks([out, retval] LONG* pVal);
 	[propput, id(2)] HRESULT ComMarks([in] LONG newVal);
 	[propget, id(3)] HRESULT AtlMarks([out, retval] LONG* pVal);
